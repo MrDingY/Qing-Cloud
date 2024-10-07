@@ -1,17 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <groupId>cn.qing.cloud</groupId>
+    <artifactId>qing</artifactId>
+    <version>${revision}</version>
+    <packaging>pom</packaging>
 
-    <groupId>com.cn.ding</groupId>
-    <artifactId>Qing-Cloud</artifactId>
-    <version>1.0-SNAPSHOT</version>
-
+    <modules>
+    </modules>
+    <name>${project.artifactId}</name>
+    <description>快速开发平坦基础脚手架</description>
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <revision>1.0.0-SNAPSHOT</revision>
+        <java.version>17</java.version>
+        <spring.boot.version>2.7.18</spring.boot.version>
     </properties>
+    <dependencyManagement>
 
+    </dependencyManagement>
+    <build>
+        <pluginManagement>
+        </pluginManagement>
+        <plugins>
+            <!--  统一 revision 版本  -->
+        </plugins>
+    </build>
+    <!--  使用 huawei / aliyun 的 Maven 源，提升下载速度  -->
+    <repositories>
+        <repository>
+            <id>huaweicloud</id>
+            <name>huawei</name>
+            <url>https://mirrors.huaweicloud.com/repository/maven/</url>
+        </repository>
+        <repository>
+            <id>aliyunmaven</id>
+            <name>aliyun</name>
+            <url>https://maven.aliyun.com/repository/public</url>
+        </repository>
+    </repositories>
 </project>
