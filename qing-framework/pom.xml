@@ -15,7 +15,7 @@
         <module>qing-spring-boot-starter-web</module>
         <module>qing-spring-boot-starter-mybatis</module>
         <module>qing-common</module>
-        <module>qing-spring-boot-starter-security</module>
+       <!-- <module>qing-spring-boot-starter-security</module>-->
     </modules>
 
     <properties>

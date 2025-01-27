@@ -33,11 +33,11 @@
         </dependency>
 
         <!-- Web 相关 -->
-        <dependency>
+        <!--<dependency>
             <groupId>cn.qing.cloud</groupId>
             <artifactId>qing-spring-boot-starter-security</artifactId>
             <version>${revision}</version>
-        </dependency>
+        </dependency>-->
 
     </dependencies>
 
